@@ -1,0 +1,39 @@
+{
+  "name": "@rownd/rcs-business-messaging",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "files": [
+    "./dist/**/*.js"
+  ],
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "prettier -w ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitthub.com/rownd/rcs-business-mmessaging"
+  },
+  "author": "Bobby Radford (@BobbyRadford)",
+  "license": "ISC",
+  "dependencies": {
+    "google-auth-library": "^8.7.0",
+    "googleapis": "^114.0.0",
+    "googleapis-common": "^6.0.4",
+    "i": "^0.3.7",
+    "nanoid": "^2.1.11",
+    "npm": "^9.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/parser": "^5.57.1",
+    "esbuild": "^0.17.15",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.7",
+    "prettier-eslint": "^15.0.1",
+    "typescript": "^5.0.3"
+  }
+}
