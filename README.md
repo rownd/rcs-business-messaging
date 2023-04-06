@@ -1,5 +1,5 @@
 # @rownd/rcs-business-messaging
-An RCS Business Messaging Library for Node
+A RCS Business Messaging Library for Node
 
 ## Installation
 
@@ -45,7 +45,7 @@ try {
 
 const response = await rbmApiHelper.sendMessage({
   messageText: message,
-  msisdn: to,
+  msisdn: msisdn,
   suggestions: [],
 });
 ```

@@ -27,7 +27,6 @@
     "google-auth-library": "^8.7.0",
     "googleapis": "^114.0.0",
     "googleapis-common": "^6.0.4",
-    "i": "^0.3.7",
     "nanoid": "^2.1.11",
     "npm": "^9.6.3"
   },
