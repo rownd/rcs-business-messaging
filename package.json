@@ -8,6 +8,11 @@
     "./dist/**/*.d.ts"
   ],
   "types": "./dist/index.d.ts",
+  "keywords": [
+    "rcs",
+    "rcsbusinessmessaging",
+    "rbm"
+  ],
   "scripts": {
     "build": "tsc",
     "lint": "prettier -w ./src"
