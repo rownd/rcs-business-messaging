@@ -28,7 +28,7 @@
     "googleapis": "^114.0.0",
     "googleapis-common": "^6.0.4",
     "nanoid": "^2.1.11",
-    "npm": "^9.6.3"
+    "npm": "^10.9.0"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
