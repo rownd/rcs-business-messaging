@@ -15,7 +15,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "lint": "prettier -w ./src"
+    "lint": "prettier -w ./src",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "npm": "^10.9.0"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^9.0.2",
     "@types/node": "^18.15.11",
     "@typescript-eslint/parser": "^5.57.1",
     "esbuild": "^0.17.15",
@@ -39,6 +41,27 @@
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.7",
     "prettier-eslint": "^15.0.1",
+    "release-it": "^17.10.0",
     "typescript": "^5.0.3"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular"
+      }
+    },
+    "hooks": {
+      "after:bump": "npm run build"
+    }
   }
 }
