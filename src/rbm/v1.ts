@@ -7,7 +7,7 @@ import {
   MethodOptions,
   StreamMethodOptions,
 } from "googleapis-common";
-import * as types from "./types";
+import * as types from "./types.js";
 import { Readable } from "stream";
 
 /**

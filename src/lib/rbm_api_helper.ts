@@ -2,15 +2,15 @@ import { google } from "googleapis";
 import { OAuth2Client } from "googleapis-common";
 import { nanoid } from 'nanoid'
 
-import { Rcsbusinessmessaging } from "../rbm/v1";
+import { Rcsbusinessmessaging } from "../rbm/v1.js";
 import {
   Schema$Capabilities,
   Schema$AgentMessage,
   Schema$AgentEvent,
   Schema$CarouselCard,
-} from "../rbm/types";
-import { Schema$Tester } from "../rbm/types";
-import { Schema$BatchGetUsersResponse } from "../rbm/types";
+} from "../rbm/types.js";
+import { Schema$Tester } from "../rbm/types.js";
+import { Schema$BatchGetUsersResponse } from "../rbm/types.js";
 
 declare interface SendMessageParams {
   msisdn: string;

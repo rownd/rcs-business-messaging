@@ -1,6 +1,6 @@
 import { google } from "googleapis";
 import { nanoid } from 'nanoid';
-import { Rcsbusinessmessaging } from "../rbm/v1";
+import { Rcsbusinessmessaging } from "../rbm/v1.js";
 export default class RbmApiHelper {
     constructor(authClient) {
         // configure a JWT auth client
