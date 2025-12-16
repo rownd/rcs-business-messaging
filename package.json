@@ -1,6 +1,6 @@
 {
   "name": "@rownd/rcs-business-messaging",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
   "type": "module",
   "main": "./dist/index.js",
