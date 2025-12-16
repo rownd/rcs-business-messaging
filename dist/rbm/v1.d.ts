@@ -1,4 +1,3 @@
-/// <reference types="node" />
 import { GaxiosResponse, APIRequestContext, GoogleConfigurable, GlobalOptions, MethodOptions, StreamMethodOptions } from "googleapis-common";
 import * as types from "./types";
 import { Readable } from "stream";

@@ -8,12 +8,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const googleapis_1 = require("googleapis");
-const nanoid_1 = __importDefault(require("nanoid"));
+const nanoid_1 = require("nanoid");
 const v1_1 = require("../rbm/v1");
 class RbmApiHelper {
     constructor(authClient) {
@@ -28,7 +25,7 @@ class RbmApiHelper {
      */
     checkCapability(msisdn, requestId) {
         return __awaiter(this, void 0, void 0, function* () {
-            requestId = requestId || (0, nanoid_1.default)();
+            requestId = requestId || (0, nanoid_1.nanoid)();
             // set the params
             const params = {
                 name: "phones/" + msisdn,
@@ -81,7 +78,7 @@ class RbmApiHelper {
     sendIsTypingMessage(msisdn) {
         return __awaiter(this, void 0, void 0, function* () {
             // generate a random message id for this event
-            let eventId = (0, nanoid_1.default)();
+            let eventId = (0, nanoid_1.nanoid)();
             // create the JSON message payload to send
             let options = {
                 eventType: "IS_TYPING",
@@ -107,7 +104,7 @@ class RbmApiHelper {
             const imageUrl = params.imageUrl;
             const msisdn = params.msisdn;
             // Generate a random message id for this message
-            const messageId = (0, nanoid_1.default)();
+            const messageId = (0, nanoid_1.nanoid)();
             // Create the JSON message payload to send
             const options = {
                 contentMessage: {
@@ -153,7 +150,7 @@ class RbmApiHelper {
             // msisdn to send the message to
             let msisdn = params.msisdn;
             // generate a random message id for this message
-            let messageId = (0, nanoid_1.default)();
+            let messageId = (0, nanoid_1.nanoid)();
             // create the JSON message payload to send
             let options = {
                 contentMessage: {
@@ -184,7 +181,7 @@ class RbmApiHelper {
     sendMessage(params) {
         return __awaiter(this, void 0, void 0, function* () {
             // Generate a random message id for this message
-            const messageId = (0, nanoid_1.default)();
+            const messageId = (0, nanoid_1.nanoid)();
             // Get the message text and msisdn from the parameters
             const messageText = params.messageText;
             const msisdn = params.msisdn;
@@ -221,7 +218,7 @@ class RbmApiHelper {
     sendReadMessage(msisdn, messageId) {
         return __awaiter(this, void 0, void 0, function* () {
             // Generate a random message id for this event
-            const eventId = (0, nanoid_1.default)();
+            const eventId = (0, nanoid_1.nanoid)();
             // Create the JSON message payload to send
             const options = {
                 eventType: "READ",
